@@ -4,7 +4,7 @@ import Image from "next/image";
 
 const FeatureSection = () => {
   return (
-    <div className="flex items-center justify-center gap-5 my-10 h-screen">
+    <div className="flex items-center justify-center gap-10 my-10 h-screen bg-[#f8f9fa]">
       <Image
         src="/dashboard.jpg"
         alt="Feature image"

@@ -3,7 +3,7 @@ import Cards from "./Cards";
 
 const CardLayout = () => {
   return (
-    <div className="flex items-center justify-center gap-5 mb-5">
+    <div className="flex items-center justify-center gap-5  my-[50px]">
       <Cards
         cardTitle="Grow Your Business"
         cardText="Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts."

@@ -80,12 +80,6 @@ export default function ContactUS() {
             Send Message
           </button>
         </form>
-
-        <div className="mt-10 text-center text-gray-600">
-          <p>📍 Lahore, Pakistan</p>
-          <p>📞 +92 300 1234567</p>
-          <p>✉️ info@demo-site.com</p>
-        </div>
       </div>
     </div>
   );
