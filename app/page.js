@@ -1,66 +1,45 @@
-import Image from "next/image";
-import styles from "./page.module.css";
+import CardLayout from "@/components/general/CardLayout";
+import FeatureList from "@/components/general/FeatureList";
+import FeatureSection from "@/components/general/FeatureSection";
+import HomeLayout from "@/components/general/HomeLayout";
+import Navbar from "@/components/general/Navbar";
+import React from "react";
 
-export default function Home() {
+const Home = () => {
   return (
-    <div className={styles.page}>
-      <main className={styles.main}>
-        <Image
-          className={styles.logo}
-          src="/next.svg"
-          alt="Next.js logo"
-          width={100}
-          height={20}
-          priority
-        />
-        <div className={styles.intro}>
-          <h1>To get started, edit the page.js file.</h1>
-          <p>
-            Looking for a starting point or more instructions? Head over to{" "}
-            <a
-              href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              Templates
-            </a>{" "}
-            or the{" "}
-            <a
-              href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              Learning
-            </a>{" "}
-            center.
-          </p>
+    <div className="max-w-[1200px] mx-auto px-5">
+      <Navbar />
+
+      <HomeLayout
+        title="Promote Your Products by Colorlib"
+        text="Another cool free html css template by Colorlib Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts. Separated they live in Bookmarksgrove right at the coast"
+        illustration="/home-illustration.svg"
+        width="634"
+        height="423"
+      >
+        <div className="flex items-center gap-5">
+          <button className="rounded-3xl px-5 py-4 bg-blue-500 text-white max-w-[120px]">
+            See feature
+          </button>
+          <button className="rounded-3xl px-5 py-4 border border-[blue]  text-[blue] max-w-[120px]">
+            Pricing
+          </button>
         </div>
-        <div className={styles.ctas}>
-          <a
-            className={styles.primary}
-            href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <Image
-              className={styles.logo}
-              src="/vercel.svg"
-              alt="Vercel logomark"
-              width={16}
-              height={16}
-            />
-            Deploy Now
-          </a>
-          <a
-            className={styles.secondary}
-            href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Documentation
-          </a>
-        </div>
-      </main>
+      </HomeLayout>
+
+      <HomeLayout
+        title="Promote Your Products by Colorlib"
+        text="Another cool free html css template by Colorlib Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts. Separated they live in Bookmarksgrove right at the coast"
+        illustration="/dashboard.jpg"
+        width="634"
+        height="488"
+      />
+
+      <CardLayout />
+
+      <FeatureSection />
     </div>
   );
-}
+};
+
+export default Home;
