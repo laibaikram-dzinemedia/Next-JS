@@ -3,7 +3,7 @@ import Image from "next/image";
 
 const Feature = ({ featureImg, featureTitle, featureText }) => {
   return (
-    <div className="flex  items-start gap-3">
+    <div className="flex  items-start gap-3 ">
       <Image
         src={featureImg}
         alt="Feature image"

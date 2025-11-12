@@ -8,8 +8,6 @@ import React from "react";
 const Home = () => {
   return (
     <div className="max-w-[1200px] mx-auto px-5">
-      <Navbar />
-
       <HomeLayout
         title="Promote Your Products by Colorlib"
         text="Another cool free html css template by Colorlib Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts. Separated they live in Bookmarksgrove right at the coast"
