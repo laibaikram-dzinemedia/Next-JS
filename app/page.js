@@ -1,5 +1,5 @@
 import CardLayout from "@/components/general/CardLayout";
-import FeatureList from "@/components/general/FeatureList";
+import Container from "@/components/general/Container";
 import FeatureSection from "@/components/general/FeatureSection";
 import HomeLayout from "@/components/general/HomeLayout";
 import Navbar from "@/components/general/Navbar";
@@ -8,7 +8,7 @@ import React from "react";
 const Home = () => {
   return (
     <>
-      <div className="max-w-[1200px] mx-auto px-5">
+      <Container>
         <Navbar />
         <HomeLayout
           title="Promote Your Products by Colorlib"
@@ -36,7 +36,7 @@ const Home = () => {
         />
 
         <CardLayout />
-      </div>
+      </Container>
       <FeatureSection />
     </>
   );
